@@ -15,6 +15,12 @@
 		B52CA76618185C9D0021E14E /* doc_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B52CA76418185C9D0021E14E /* doc_48x48.png */; };
 		B52CA76818185DF40021E14E /* directions_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B52CA76718185DF40021E14E /* directions_48x48.png */; };
 		B52CA76918185DF40021E14E /* directions_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B52CA76718185DF40021E14E /* directions_48x48.png */; };
+		B534049118259A54007DD8DE /* MADMeetup.m in Sources */ = {isa = PBXBuildFile; fileRef = B534049018259A54007DD8DE /* MADMeetup.m */; };
+		B534049418259B91007DD8DE /* MADMeetupDireccion.m in Sources */ = {isa = PBXBuildFile; fileRef = B534049318259B91007DD8DE /* MADMeetupDireccion.m */; };
+		B53404971825F280007DD8DE /* MADEventosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53404961825F280007DD8DE /* MADEventosTableViewController.m */; };
+		B53404A01826C8A0007DD8DE /* MADMeetupPasadoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B534049F1826C8A0007DD8DE /* MADMeetupPasadoViewCell.m */; };
+		B53404A31826D76D007DD8DE /* MADMeetupProximoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B53404A21826D76D007DD8DE /* MADMeetupProximoViewCell.m */; };
+		B545509C1821C02200A07FA0 /* madridjs.png in Resources */ = {isa = PBXBuildFile; fileRef = B545509B1821C02200A07FA0 /* madridjs.png */; };
 		B548594518182EA000709B23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B548594418182EA000709B23 /* Foundation.framework */; };
 		B548594718182EA000709B23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B548594618182EA000709B23 /* CoreGraphics.framework */; };
 		B548594918182EA000709B23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B548594818182EA000709B23 /* UIKit.framework */; };
@@ -44,6 +50,10 @@
 		B548598E1818438D00709B23 /* share_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B548598D1818438D00709B23 /* share_48x48.png */; };
 		B548598F1818438D00709B23 /* share_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B548598D1818438D00709B23 /* share_48x48.png */; };
 		B54859911818459300709B23 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54859901818459300709B23 /* MapKit.framework */; };
+		B5ED791E182038F5002D9A76 /* MADAutenticacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ED791D182038F5002D9A76 /* MADAutenticacionViewController.m */; };
+		B5ED792218204E06002D9A76 /* MADEventosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ED792118204E06002D9A76 /* MADEventosViewController.m */; };
+		B5ED792618205A2F002D9A76 /* MADBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ED792518205A2F002D9A76 /* MADBackend.m */; };
+		B5FC183C182734F900938D8D /* MADLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FC183B182734F900938D8D /* MADLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +71,17 @@
 		B52CA76118185B8A0021E14E /* video_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_48x48.png; sourceTree = "<group>"; };
 		B52CA76418185C9D0021E14E /* doc_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doc_48x48.png; sourceTree = "<group>"; };
 		B52CA76718185DF40021E14E /* directions_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions_48x48.png; sourceTree = "<group>"; };
+		B534048F18259A54007DD8DE /* MADMeetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADMeetup.h; sourceTree = "<group>"; };
+		B534049018259A54007DD8DE /* MADMeetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADMeetup.m; sourceTree = "<group>"; };
+		B534049218259B91007DD8DE /* MADMeetupDireccion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADMeetupDireccion.h; path = src/Backend/MADMeetupDireccion.h; sourceTree = "<group>"; };
+		B534049318259B91007DD8DE /* MADMeetupDireccion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADMeetupDireccion.m; path = src/Backend/MADMeetupDireccion.m; sourceTree = "<group>"; };
+		B53404951825F280007DD8DE /* MADEventosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADEventosTableViewController.h; path = MadridJS/src/Eventos/MADEventosTableViewController.h; sourceTree = "<group>"; };
+		B53404961825F280007DD8DE /* MADEventosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADEventosTableViewController.m; path = MadridJS/src/Eventos/MADEventosTableViewController.m; sourceTree = "<group>"; };
+		B534049E1826C8A0007DD8DE /* MADMeetupPasadoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADMeetupPasadoViewCell.h; path = src/ui/MADMeetupPasadoViewCell.h; sourceTree = "<group>"; };
+		B534049F1826C8A0007DD8DE /* MADMeetupPasadoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADMeetupPasadoViewCell.m; path = src/ui/MADMeetupPasadoViewCell.m; sourceTree = "<group>"; };
+		B53404A11826D76D007DD8DE /* MADMeetupProximoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADMeetupProximoViewCell.h; sourceTree = "<group>"; };
+		B53404A21826D76D007DD8DE /* MADMeetupProximoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADMeetupProximoViewCell.m; sourceTree = "<group>"; };
+		B545509B1821C02200A07FA0 /* madridjs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madridjs.png; sourceTree = "<group>"; };
 		B548594118182EA000709B23 /* MadridJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B548594418182EA000709B23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B548594618182EA000709B23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +109,14 @@
 		B548598A181842E700709B23 /* calendar_48_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_48_48.png; sourceTree = "<group>"; };
 		B548598D1818438D00709B23 /* share_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share_48x48.png; sourceTree = "<group>"; };
 		B54859901818459300709B23 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B5ED791C182038F5002D9A76 /* MADAutenticacionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADAutenticacionViewController.h; path = src/Autenticacion/MADAutenticacionViewController.h; sourceTree = "<group>"; };
+		B5ED791D182038F5002D9A76 /* MADAutenticacionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADAutenticacionViewController.m; path = src/Autenticacion/MADAutenticacionViewController.m; sourceTree = "<group>"; };
+		B5ED792018204E06002D9A76 /* MADEventosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADEventosViewController.h; path = src/Eventos/MADEventosViewController.h; sourceTree = "<group>"; };
+		B5ED792118204E06002D9A76 /* MADEventosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADEventosViewController.m; path = src/Eventos/MADEventosViewController.m; sourceTree = "<group>"; };
+		B5ED792418205A2F002D9A76 /* MADBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADBackend.h; path = src/Backend/MADBackend.h; sourceTree = "<group>"; };
+		B5ED792518205A2F002D9A76 /* MADBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADBackend.m; path = src/Backend/MADBackend.m; sourceTree = "<group>"; };
+		B5FC183A182734F900938D8D /* MADLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADLoginViewController.h; path = src/Autenticacion/MADLoginViewController.h; sourceTree = "<group>"; };
+		B5FC183B182734F900938D8D /* MADLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADLoginViewController.m; path = src/Autenticacion/MADLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +147,8 @@
 		B548593818182EA000709B23 = {
 			isa = PBXGroup;
 			children = (
+				B53404951825F280007DD8DE /* MADEventosTableViewController.h */,
+				B53404961825F280007DD8DE /* MADEventosTableViewController.m */,
 				B548594A18182EA000709B23 /* MadridJS */,
 				B548596918182EA000709B23 /* MadridJSTests */,
 				B548594318182EA000709B23 /* Frameworks */,
@@ -149,6 +180,9 @@
 		B548594A18182EA000709B23 /* MadridJS */ = {
 			isa = PBXGroup;
 			children = (
+				B5ED7923182059F8002D9A76 /* BackEnd */,
+				B5ED791F18204D7F002D9A76 /* Eventos */,
+				B5ED791518203065002D9A76 /* OAuth */,
 				B548597A1818335C00709B23 /* IMG */,
 				B548595318182EA000709B23 /* ER9AppDelegate.h */,
 				B548595418182EA000709B23 /* ER9AppDelegate.m */,
@@ -193,6 +227,7 @@
 		B548597A1818335C00709B23 /* IMG */ = {
 			isa = PBXGroup;
 			children = (
+				B545509B1821C02200A07FA0 /* madridjs.png */,
 				B52CA76718185DF40021E14E /* directions_48x48.png */,
 				B52CA76418185C9D0021E14E /* doc_48x48.png */,
 				B52CA76118185B8A0021E14E /* video_48x48.png */,
@@ -206,6 +241,43 @@
 				B548597C1818336A00709B23 /* Bar-Chart@2x.png */,
 			);
 			name = IMG;
+			sourceTree = "<group>";
+		};
+		B5ED791518203065002D9A76 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				B5FC183A182734F900938D8D /* MADLoginViewController.h */,
+				B5FC183B182734F900938D8D /* MADLoginViewController.m */,
+				B5ED791C182038F5002D9A76 /* MADAutenticacionViewController.h */,
+				B5ED791D182038F5002D9A76 /* MADAutenticacionViewController.m */,
+			);
+			name = OAuth;
+			sourceTree = "<group>";
+		};
+		B5ED791F18204D7F002D9A76 /* Eventos */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED792018204E06002D9A76 /* MADEventosViewController.h */,
+				B5ED792118204E06002D9A76 /* MADEventosViewController.m */,
+				B534049E1826C8A0007DD8DE /* MADMeetupPasadoViewCell.h */,
+				B534049F1826C8A0007DD8DE /* MADMeetupPasadoViewCell.m */,
+				B53404A11826D76D007DD8DE /* MADMeetupProximoViewCell.h */,
+				B53404A21826D76D007DD8DE /* MADMeetupProximoViewCell.m */,
+			);
+			name = Eventos;
+			sourceTree = "<group>";
+		};
+		B5ED7923182059F8002D9A76 /* BackEnd */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED792418205A2F002D9A76 /* MADBackend.h */,
+				B5ED792518205A2F002D9A76 /* MADBackend.m */,
+				B534048F18259A54007DD8DE /* MADMeetup.h */,
+				B534049018259A54007DD8DE /* MADMeetup.m */,
+				B534049218259B91007DD8DE /* MADMeetupDireccion.h */,
+				B534049318259B91007DD8DE /* MADMeetupDireccion.m */,
+			);
+			name = BackEnd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +364,7 @@
 				B548598E1818438D00709B23 /* share_48x48.png in Resources */,
 				B52CA76518185C9D0021E14E /* doc_48x48.png in Resources */,
 				B548595D18182EA000709B23 /* Images.xcassets in Resources */,
+				B545509C1821C02200A07FA0 /* madridjs.png in Resources */,
 				B52CA76218185B8A0021E14E /* video_48x48.png in Resources */,
 				B5485985181833E300709B23 /* Browse-3@2x.png in Resources */,
 				B548594F18182EA000709B23 /* InfoPlist.strings in Resources */,
@@ -328,7 +401,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53404A31826D76D007DD8DE /* MADMeetupProximoViewCell.m in Sources */,
+				B5FC183C182734F900938D8D /* MADLoginViewController.m in Sources */,
+				B5ED791E182038F5002D9A76 /* MADAutenticacionViewController.m in Sources */,
+				B53404971825F280007DD8DE /* MADEventosTableViewController.m in Sources */,
+				B534049418259B91007DD8DE /* MADMeetupDireccion.m in Sources */,
+				B5ED792218204E06002D9A76 /* MADEventosViewController.m in Sources */,
 				B548595B18182EA000709B23 /* ER9ViewController.m in Sources */,
+				B5ED792618205A2F002D9A76 /* MADBackend.m in Sources */,
+				B534049118259A54007DD8DE /* MADMeetup.m in Sources */,
+				B53404A01826C8A0007DD8DE /* MADMeetupPasadoViewCell.m in Sources */,
 				B548595118182EA000709B23 /* main.m in Sources */,
 				B548595518182EA000709B23 /* ER9AppDelegate.m in Sources */,
 			);
