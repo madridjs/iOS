@@ -15,9 +15,10 @@
 		B52CA76618185C9D0021E14E /* doc_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B52CA76418185C9D0021E14E /* doc_48x48.png */; };
 		B52CA76818185DF40021E14E /* directions_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B52CA76718185DF40021E14E /* directions_48x48.png */; };
 		B52CA76918185DF40021E14E /* directions_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B52CA76718185DF40021E14E /* directions_48x48.png */; };
+		B5310DBA18282D810066B539 /* MADPasadoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5310DB918282D810066B539 /* MADPasadoTableViewController.m */; };
+		B5310DBD18282FE90066B539 /* MADPasadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5310DBC18282FE90066B539 /* MADPasadoViewController.m */; };
 		B534049118259A54007DD8DE /* MADMeetup.m in Sources */ = {isa = PBXBuildFile; fileRef = B534049018259A54007DD8DE /* MADMeetup.m */; };
 		B534049418259B91007DD8DE /* MADMeetupDireccion.m in Sources */ = {isa = PBXBuildFile; fileRef = B534049318259B91007DD8DE /* MADMeetupDireccion.m */; };
-		B53404971825F280007DD8DE /* MADEventosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53404961825F280007DD8DE /* MADEventosTableViewController.m */; };
 		B53404A01826C8A0007DD8DE /* MADMeetupPasadoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B534049F1826C8A0007DD8DE /* MADMeetupPasadoViewCell.m */; };
 		B53404A31826D76D007DD8DE /* MADMeetupProximoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B53404A21826D76D007DD8DE /* MADMeetupProximoViewCell.m */; };
 		B545509C1821C02200A07FA0 /* madridjs.png in Resources */ = {isa = PBXBuildFile; fileRef = B545509B1821C02200A07FA0 /* madridjs.png */; };
@@ -50,6 +51,26 @@
 		B548598E1818438D00709B23 /* share_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B548598D1818438D00709B23 /* share_48x48.png */; };
 		B548598F1818438D00709B23 /* share_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B548598D1818438D00709B23 /* share_48x48.png */; };
 		B54859911818459300709B23 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54859901818459300709B23 /* MapKit.framework */; };
+		B57A3A8718293EE000E477A5 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = B57A3A8618293EE000E477A5 /* info.png */; };
+		B57A3A8918293F9400E477A5 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = B57A3A8818293F9400E477A5 /* user.png */; };
+		B57A3A8D182942C800E477A5 /* MADUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B57A3A8C182942C800E477A5 /* MADUtil.m */; };
+		B58B154C182AB67600FC1469 /* MADProximoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B154B182AB67600FC1469 /* MADProximoTableViewController.m */; };
+		B58B1551182ABB3600FC1469 /* MADMapa.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B1550182ABB3600FC1469 /* MADMapa.m */; };
+		B58B1554182AC42700FC1469 /* MADAnotacion.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B1553182AC42700FC1469 /* MADAnotacion.m */; };
+		B58B1557182ADE1D00FC1469 /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B1556182ADE1D00FC1469 /* config.png */; };
+		B58B1559182AE3AA00FC1469 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B1558182AE3AA00FC1469 /* play.png */; };
+		B58B155D182AE58F00FC1469 /* MADEventosVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B155C182AE58F00FC1469 /* MADEventosVC.m */; };
+		B58B1564182AE99800FC1469 /* MADEventoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B1563182AE99800FC1469 /* MADEventoViewCell.m */; };
+		B58B1566182AF49300FC1469 /* play_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B1565182AF49300FC1469 /* play_btn.png */; };
+		B58B1568182AF6B700FC1469 /* play_btn_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B1567182AF6B700FC1469 /* play_btn_orange.png */; };
+		B58B156C182AFA5100FC1469 /* play_btn_ortransp.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B156B182AFA5100FC1469 /* play_btn_ortransp.png */; };
+		B58B156E182AFC2900FC1469 /* play_btn_ortransp_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B156D182AFC2900FC1469 /* play_btn_ortransp_v2.png */; };
+		B58B1570182AFCA800FC1469 /* play_btn_ortransp_v3.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B156F182AFCA800FC1469 /* play_btn_ortransp_v3.png */; };
+		B58B1572182B00A600FC1469 /* doc_btn_v1.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B1571182B00A600FC1469 /* doc_btn_v1.png */; };
+		B58B1576182B04A400FC1469 /* info_btn_v1.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B1575182B04A400FC1469 /* info_btn_v1.png */; };
+		B58B1578182B10EE00FC1469 /* mapa_btn_v1.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B1577182B10EE00FC1469 /* mapa_btn_v1.png */; };
+		B58B157A182B128600FC1469 /* calendario_btn_v1.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B1579182B128600FC1469 /* calendario_btn_v1.png */; };
+		B58B157D182B133100FC1469 /* MADEventoProxViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B157C182B133100FC1469 /* MADEventoProxViewCell.m */; };
 		B5ED791E182038F5002D9A76 /* MADAutenticacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ED791D182038F5002D9A76 /* MADAutenticacionViewController.m */; };
 		B5ED792218204E06002D9A76 /* MADEventosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ED792118204E06002D9A76 /* MADEventosViewController.m */; };
 		B5ED792618205A2F002D9A76 /* MADBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ED792518205A2F002D9A76 /* MADBackend.m */; };
@@ -71,12 +92,14 @@
 		B52CA76118185B8A0021E14E /* video_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_48x48.png; sourceTree = "<group>"; };
 		B52CA76418185C9D0021E14E /* doc_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doc_48x48.png; sourceTree = "<group>"; };
 		B52CA76718185DF40021E14E /* directions_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions_48x48.png; sourceTree = "<group>"; };
+		B5310DB818282D810066B539 /* MADPasadoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADPasadoTableViewController.h; path = src/Eventos/MADPasadoTableViewController.h; sourceTree = "<group>"; };
+		B5310DB918282D810066B539 /* MADPasadoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPasadoTableViewController.m; path = src/Eventos/MADPasadoTableViewController.m; sourceTree = "<group>"; };
+		B5310DBB18282FE90066B539 /* MADPasadoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADPasadoViewController.h; path = src/Eventos/MADPasadoViewController.h; sourceTree = "<group>"; };
+		B5310DBC18282FE90066B539 /* MADPasadoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPasadoViewController.m; path = src/Eventos/MADPasadoViewController.m; sourceTree = "<group>"; };
 		B534048F18259A54007DD8DE /* MADMeetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADMeetup.h; sourceTree = "<group>"; };
 		B534049018259A54007DD8DE /* MADMeetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADMeetup.m; sourceTree = "<group>"; };
 		B534049218259B91007DD8DE /* MADMeetupDireccion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADMeetupDireccion.h; path = src/Backend/MADMeetupDireccion.h; sourceTree = "<group>"; };
 		B534049318259B91007DD8DE /* MADMeetupDireccion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADMeetupDireccion.m; path = src/Backend/MADMeetupDireccion.m; sourceTree = "<group>"; };
-		B53404951825F280007DD8DE /* MADEventosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADEventosTableViewController.h; path = MadridJS/src/Eventos/MADEventosTableViewController.h; sourceTree = "<group>"; };
-		B53404961825F280007DD8DE /* MADEventosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADEventosTableViewController.m; path = MadridJS/src/Eventos/MADEventosTableViewController.m; sourceTree = "<group>"; };
 		B534049E1826C8A0007DD8DE /* MADMeetupPasadoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADMeetupPasadoViewCell.h; path = src/ui/MADMeetupPasadoViewCell.h; sourceTree = "<group>"; };
 		B534049F1826C8A0007DD8DE /* MADMeetupPasadoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADMeetupPasadoViewCell.m; path = src/ui/MADMeetupPasadoViewCell.m; sourceTree = "<group>"; };
 		B53404A11826D76D007DD8DE /* MADMeetupProximoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADMeetupProximoViewCell.h; sourceTree = "<group>"; };
@@ -109,6 +132,33 @@
 		B548598A181842E700709B23 /* calendar_48_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_48_48.png; sourceTree = "<group>"; };
 		B548598D1818438D00709B23 /* share_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share_48x48.png; sourceTree = "<group>"; };
 		B54859901818459300709B23 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B57A3A8618293EE000E477A5 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		B57A3A8818293F9400E477A5 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		B57A3A8B182942C800E477A5 /* MADUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADUtil.h; path = src/util/MADUtil.h; sourceTree = "<group>"; };
+		B57A3A8C182942C800E477A5 /* MADUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADUtil.m; path = src/util/MADUtil.m; sourceTree = "<group>"; };
+		B58B154A182AB67600FC1469 /* MADProximoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADProximoTableViewController.h; sourceTree = "<group>"; };
+		B58B154B182AB67600FC1469 /* MADProximoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADProximoTableViewController.m; sourceTree = "<group>"; };
+		B58B154F182ABB3600FC1469 /* MADMapa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADMapa.h; path = src/ui/MADMapa.h; sourceTree = "<group>"; };
+		B58B1550182ABB3600FC1469 /* MADMapa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADMapa.m; path = src/ui/MADMapa.m; sourceTree = "<group>"; };
+		B58B1552182AC42700FC1469 /* MADAnotacion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADAnotacion.h; sourceTree = "<group>"; };
+		B58B1553182AC42700FC1469 /* MADAnotacion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADAnotacion.m; sourceTree = "<group>"; };
+		B58B1556182ADE1D00FC1469 /* config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config.png; sourceTree = "<group>"; };
+		B58B1558182AE3AA00FC1469 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		B58B155B182AE58F00FC1469 /* MADEventosVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADEventosVC.h; sourceTree = "<group>"; };
+		B58B155C182AE58F00FC1469 /* MADEventosVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADEventosVC.m; sourceTree = "<group>"; };
+		B58B1562182AE99800FC1469 /* MADEventoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADEventoViewCell.h; path = ../MADEventoViewCell.h; sourceTree = "<group>"; };
+		B58B1563182AE99800FC1469 /* MADEventoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADEventoViewCell.m; path = ../MADEventoViewCell.m; sourceTree = "<group>"; };
+		B58B1565182AF49300FC1469 /* play_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_btn.png; sourceTree = "<group>"; };
+		B58B1567182AF6B700FC1469 /* play_btn_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_btn_orange.png; sourceTree = "<group>"; };
+		B58B156B182AFA5100FC1469 /* play_btn_ortransp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_btn_ortransp.png; sourceTree = "<group>"; };
+		B58B156D182AFC2900FC1469 /* play_btn_ortransp_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_btn_ortransp_v2.png; sourceTree = "<group>"; };
+		B58B156F182AFCA800FC1469 /* play_btn_ortransp_v3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_btn_ortransp_v3.png; sourceTree = "<group>"; };
+		B58B1571182B00A600FC1469 /* doc_btn_v1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doc_btn_v1.png; sourceTree = "<group>"; };
+		B58B1575182B04A400FC1469 /* info_btn_v1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_btn_v1.png; sourceTree = "<group>"; };
+		B58B1577182B10EE00FC1469 /* mapa_btn_v1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapa_btn_v1.png; sourceTree = "<group>"; };
+		B58B1579182B128600FC1469 /* calendario_btn_v1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendario_btn_v1.png; sourceTree = "<group>"; };
+		B58B157B182B133000FC1469 /* MADEventoProxViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADEventoProxViewCell.h; sourceTree = "<group>"; };
+		B58B157C182B133100FC1469 /* MADEventoProxViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADEventoProxViewCell.m; sourceTree = "<group>"; };
 		B5ED791C182038F5002D9A76 /* MADAutenticacionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADAutenticacionViewController.h; path = src/Autenticacion/MADAutenticacionViewController.h; sourceTree = "<group>"; };
 		B5ED791D182038F5002D9A76 /* MADAutenticacionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADAutenticacionViewController.m; path = src/Autenticacion/MADAutenticacionViewController.m; sourceTree = "<group>"; };
 		B5ED792018204E06002D9A76 /* MADEventosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADEventosViewController.h; path = src/Eventos/MADEventosViewController.h; sourceTree = "<group>"; };
@@ -144,11 +194,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5310DB418282CF60066B539 /* eventos pasados */ = {
+			isa = PBXGroup;
+			children = (
+				B5310DB818282D810066B539 /* MADPasadoTableViewController.h */,
+				B5310DB918282D810066B539 /* MADPasadoTableViewController.m */,
+			);
+			name = "eventos pasados";
+			sourceTree = "<group>";
+		};
 		B548593818182EA000709B23 = {
 			isa = PBXGroup;
 			children = (
-				B53404951825F280007DD8DE /* MADEventosTableViewController.h */,
-				B53404961825F280007DD8DE /* MADEventosTableViewController.m */,
 				B548594A18182EA000709B23 /* MadridJS */,
 				B548596918182EA000709B23 /* MadridJSTests */,
 				B548594318182EA000709B23 /* Frameworks */,
@@ -180,6 +237,7 @@
 		B548594A18182EA000709B23 /* MadridJS */ = {
 			isa = PBXGroup;
 			children = (
+				B57A3A8A182942AB00E477A5 /* util */,
 				B5ED7923182059F8002D9A76 /* BackEnd */,
 				B5ED791F18204D7F002D9A76 /* Eventos */,
 				B5ED791518203065002D9A76 /* OAuth */,
@@ -227,6 +285,9 @@
 		B548597A1818335C00709B23 /* IMG */ = {
 			isa = PBXGroup;
 			children = (
+				B58B1555182ADE0F00FC1469 /* New UI */,
+				B57A3A8818293F9400E477A5 /* user.png */,
+				B57A3A8618293EE000E477A5 /* info.png */,
 				B545509B1821C02200A07FA0 /* madridjs.png */,
 				B52CA76718185DF40021E14E /* directions_48x48.png */,
 				B52CA76418185C9D0021E14E /* doc_48x48.png */,
@@ -243,6 +304,94 @@
 			name = IMG;
 			sourceTree = "<group>";
 		};
+		B57A3A8A182942AB00E477A5 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B57A3A8B182942C800E477A5 /* MADUtil.h */,
+				B57A3A8C182942C800E477A5 /* MADUtil.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		B58B1548182AB5BB00FC1469 /* celdas */ = {
+			isa = PBXGroup;
+			children = (
+				B534049E1826C8A0007DD8DE /* MADMeetupPasadoViewCell.h */,
+				B534049F1826C8A0007DD8DE /* MADMeetupPasadoViewCell.m */,
+				B53404A11826D76D007DD8DE /* MADMeetupProximoViewCell.h */,
+				B53404A21826D76D007DD8DE /* MADMeetupProximoViewCell.m */,
+			);
+			name = celdas;
+			sourceTree = "<group>";
+		};
+		B58B1549182AB5CD00FC1469 /* eventos proximos */ = {
+			isa = PBXGroup;
+			children = (
+				B58B154A182AB67600FC1469 /* MADProximoTableViewController.h */,
+				B58B154B182AB67600FC1469 /* MADProximoTableViewController.m */,
+			);
+			name = "eventos proximos";
+			sourceTree = "<group>";
+		};
+		B58B154D182AB68000FC1469 /* visor */ = {
+			isa = PBXGroup;
+			children = (
+				B5310DBB18282FE90066B539 /* MADPasadoViewController.h */,
+				B5310DBC18282FE90066B539 /* MADPasadoViewController.m */,
+			);
+			name = visor;
+			sourceTree = "<group>";
+		};
+		B58B154E182ABB1600FC1469 /* mapa */ = {
+			isa = PBXGroup;
+			children = (
+				B58B154F182ABB3600FC1469 /* MADMapa.h */,
+				B58B1550182ABB3600FC1469 /* MADMapa.m */,
+				B58B1552182AC42700FC1469 /* MADAnotacion.h */,
+				B58B1553182AC42700FC1469 /* MADAnotacion.m */,
+			);
+			name = mapa;
+			sourceTree = "<group>";
+		};
+		B58B1555182ADE0F00FC1469 /* New UI */ = {
+			isa = PBXGroup;
+			children = (
+				B58B1579182B128600FC1469 /* calendario_btn_v1.png */,
+				B58B1577182B10EE00FC1469 /* mapa_btn_v1.png */,
+				B58B1575182B04A400FC1469 /* info_btn_v1.png */,
+				B58B1571182B00A600FC1469 /* doc_btn_v1.png */,
+				B58B156F182AFCA800FC1469 /* play_btn_ortransp_v3.png */,
+				B58B156D182AFC2900FC1469 /* play_btn_ortransp_v2.png */,
+				B58B156B182AFA5100FC1469 /* play_btn_ortransp.png */,
+				B58B1567182AF6B700FC1469 /* play_btn_orange.png */,
+				B58B1565182AF49300FC1469 /* play_btn.png */,
+				B58B1558182AE3AA00FC1469 /* play.png */,
+				B58B1556182ADE1D00FC1469 /* config.png */,
+			);
+			name = "New UI";
+			sourceTree = "<group>";
+		};
+		B58B155A182AE47C00FC1469 /* newUi */ = {
+			isa = PBXGroup;
+			children = (
+				B58B157E182B148700FC1469 /* cellView */,
+				B58B155B182AE58F00FC1469 /* MADEventosVC.h */,
+				B58B155C182AE58F00FC1469 /* MADEventosVC.m */,
+			);
+			name = newUi;
+			sourceTree = "<group>";
+		};
+		B58B157E182B148700FC1469 /* cellView */ = {
+			isa = PBXGroup;
+			children = (
+				B58B1562182AE99800FC1469 /* MADEventoViewCell.h */,
+				B58B1563182AE99800FC1469 /* MADEventoViewCell.m */,
+				B58B157B182B133000FC1469 /* MADEventoProxViewCell.h */,
+				B58B157C182B133100FC1469 /* MADEventoProxViewCell.m */,
+			);
+			name = cellView;
+			sourceTree = "<group>";
+		};
 		B5ED791518203065002D9A76 /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,12 +406,14 @@
 		B5ED791F18204D7F002D9A76 /* Eventos */ = {
 			isa = PBXGroup;
 			children = (
+				B58B155A182AE47C00FC1469 /* newUi */,
+				B58B154E182ABB1600FC1469 /* mapa */,
+				B58B154D182AB68000FC1469 /* visor */,
+				B58B1548182AB5BB00FC1469 /* celdas */,
+				B5310DB418282CF60066B539 /* eventos pasados */,
+				B58B1549182AB5CD00FC1469 /* eventos proximos */,
 				B5ED792018204E06002D9A76 /* MADEventosViewController.h */,
 				B5ED792118204E06002D9A76 /* MADEventosViewController.m */,
-				B534049E1826C8A0007DD8DE /* MADMeetupPasadoViewCell.h */,
-				B534049F1826C8A0007DD8DE /* MADMeetupPasadoViewCell.m */,
-				B53404A11826D76D007DD8DE /* MADMeetupProximoViewCell.h */,
-				B53404A21826D76D007DD8DE /* MADMeetupProximoViewCell.m */,
 			);
 			name = Eventos;
 			sourceTree = "<group>";
@@ -361,16 +512,29 @@
 				B54859881818414000709B23 /* calendar.png in Resources */,
 				B548598B181842E700709B23 /* calendar_48_48.png in Resources */,
 				B548597D1818336A00709B23 /* Bar-Chart.png in Resources */,
+				B58B1566182AF49300FC1469 /* play_btn.png in Resources */,
+				B58B156E182AFC2900FC1469 /* play_btn_ortransp_v2.png in Resources */,
 				B548598E1818438D00709B23 /* share_48x48.png in Resources */,
+				B58B1572182B00A600FC1469 /* doc_btn_v1.png in Resources */,
+				B57A3A8718293EE000E477A5 /* info.png in Resources */,
+				B58B1578182B10EE00FC1469 /* mapa_btn_v1.png in Resources */,
+				B58B156C182AFA5100FC1469 /* play_btn_ortransp.png in Resources */,
+				B57A3A8918293F9400E477A5 /* user.png in Resources */,
 				B52CA76518185C9D0021E14E /* doc_48x48.png in Resources */,
+				B58B1557182ADE1D00FC1469 /* config.png in Resources */,
+				B58B1576182B04A400FC1469 /* info_btn_v1.png in Resources */,
 				B548595D18182EA000709B23 /* Images.xcassets in Resources */,
 				B545509C1821C02200A07FA0 /* madridjs.png in Resources */,
 				B52CA76218185B8A0021E14E /* video_48x48.png in Resources */,
 				B5485985181833E300709B23 /* Browse-3@2x.png in Resources */,
+				B58B157A182B128600FC1469 /* calendario_btn_v1.png in Resources */,
+				B58B1559182AE3AA00FC1469 /* play.png in Resources */,
 				B548594F18182EA000709B23 /* InfoPlist.strings in Resources */,
 				B548595818182EA000709B23 /* Main.storyboard in Resources */,
 				B52CA76818185DF40021E14E /* directions_48x48.png in Resources */,
+				B58B1570182AFCA800FC1469 /* play_btn_ortransp_v3.png in Resources */,
 				B52CA75F18184E9A0021E14E /* location_48x48.png in Resources */,
+				B58B1568182AF6B700FC1469 /* play_btn_orange.png in Resources */,
 				B5485983181833E300709B23 /* Browse-3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,13 +568,21 @@
 				B53404A31826D76D007DD8DE /* MADMeetupProximoViewCell.m in Sources */,
 				B5FC183C182734F900938D8D /* MADLoginViewController.m in Sources */,
 				B5ED791E182038F5002D9A76 /* MADAutenticacionViewController.m in Sources */,
-				B53404971825F280007DD8DE /* MADEventosTableViewController.m in Sources */,
+				B58B1564182AE99800FC1469 /* MADEventoViewCell.m in Sources */,
+				B5310DBD18282FE90066B539 /* MADPasadoViewController.m in Sources */,
+				B58B155D182AE58F00FC1469 /* MADEventosVC.m in Sources */,
+				B58B1554182AC42700FC1469 /* MADAnotacion.m in Sources */,
+				B58B154C182AB67600FC1469 /* MADProximoTableViewController.m in Sources */,
+				B58B1551182ABB3600FC1469 /* MADMapa.m in Sources */,
+				B57A3A8D182942C800E477A5 /* MADUtil.m in Sources */,
 				B534049418259B91007DD8DE /* MADMeetupDireccion.m in Sources */,
 				B5ED792218204E06002D9A76 /* MADEventosViewController.m in Sources */,
 				B548595B18182EA000709B23 /* ER9ViewController.m in Sources */,
 				B5ED792618205A2F002D9A76 /* MADBackend.m in Sources */,
 				B534049118259A54007DD8DE /* MADMeetup.m in Sources */,
 				B53404A01826C8A0007DD8DE /* MADMeetupPasadoViewCell.m in Sources */,
+				B5310DBA18282D810066B539 /* MADPasadoTableViewController.m in Sources */,
+				B58B157D182B133100FC1469 /* MADEventoProxViewCell.m in Sources */,
 				B548595118182EA000709B23 /* main.m in Sources */,
 				B548595518182EA000709B23 /* ER9AppDelegate.m in Sources */,
 			);

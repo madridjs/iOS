@@ -53,16 +53,34 @@
 }
 
 
--(void)getUltimosEventos:(int)numero_of_Eventos{
 
+/*
+ recuperarEventoUsandoTiempo
+ 
+ 
+  tiempo_evento: 
+    valores aceptados]
+        @"past"
+        @"incoming"
+        @"draft"
+ */
+
+-(NSMutableURLRequest *)recuperarEventoUsandoTiempo:(NSString * )tiempo_evento cantidad:(int)cantidad{
+
+
+    
     NSString *tmpUrl = [self getRESTAPI:MEETUP_EVENTS_GET];
     
     NSMutableDictionary *param = [[NSMutableDictionary alloc]init];
- 
+    
+    //production:  madridjs
+    //devel:    ny-tech
     [param setObject:@"true" forKey:@"sign"];
-    [param setObject:@"madridjs" forKey:@"group_urlname"];
-    [param setObject:@"10" forKey:@"page"];
-    [param setObject:@"past" forKey:@"status"];
+    [param setObject:@"ny-tech" forKey:@"group_urlname"];
+    [param setObject:[NSString stringWithFormat:@"%d",cantidad] forKey:@"page"];
+    [param setObject:tiempo_evento forKey:@"status"];
+    [param setObject:@"desc" forKey:@"desc"];
+    
     
     NSString *direccionURL = [self crearPeticionRestWithUrl:tmpUrl parametros:param];
     
@@ -72,20 +90,39 @@
     
     NSString *authValue = [NSString stringWithFormat:@"Bearer %@", self.token];
     [request setValue:authValue forHTTPHeaderField:@"Authorization"];
+
     
+    return request;
+}
+
+
+-(void)getEventosPasados:(int)numero_of_eventos{
+
+
+    NSURLResponse* response;
+    NSError* error = nil;
     
-    /*
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error) {
-        
-        [self parsearData:data];
-        
-    }
-    ];*/
+    NSURLRequest *request = [self recuperarEventoUsandoTiempo:@"past" cantidad:numero_of_eventos];
+    
+    NSData *data = [NSURLConnection sendSynchronousRequest:request
+                                         returningResponse:&response
+                                                     error:&error];
+    
+    [self parsearData:data];
+
+}
+
+
+
+
+
+-(void)getUltimosEventos:(int)numero_of_eventos{
+
     
     NSURLResponse* response;
     NSError* error = nil;
     
-    
+    NSURLRequest *request = [self recuperarEventoUsandoTiempo:@"upcoming" cantidad:numero_of_eventos];
     NSData *data = [NSURLConnection sendSynchronousRequest:request
                                                   returningResponse:&response
                                                               error:&error];

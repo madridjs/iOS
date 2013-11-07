@@ -9,15 +9,8 @@
 #import "MADAutenticacionViewController.h"
 
 
-#define MEETUP_AUTHENTICATE_URL @"https://secure.meetup.com/oauth2/authorize"
 
-#define MEETUP_CLIENT_ID @"u4ts648g220dch7tppat121i2r"
 
-#define MEETUP_CLIENT_SECRET @"4a01f783b381733772e444a6b1873b"
-
-#define MEETUP_REDIRECT_URI @"http://www.madridjs.org"
-
-#define MEETUP_PARAMETER_TOKEN @"access_token"
 
 @implementation MADAutenticacionViewController
 
@@ -35,20 +28,19 @@
     
     
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+   // NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  /*
+    NSString *token = @""; //[defaults objectForKey:MEETUP_PARAMETER_TOKEN];
     
-    NSString *token = [defaults objectForKey:MEETUP_PARAMETER_TOKEN];
     
-    
-    if (![token isEqual:@""]) {
+    if ([token isEqual:@""]) {
         [_indicadorProgreso startAnimating];
         [self realizarAutenticacionOAuth];
     }else{
         
     }
     
-    
-    
+    */
 
 
 }
@@ -58,44 +50,54 @@
 
 
     
-    NSString *autenticarURLString= [NSString stringWithFormat:@"%@?client_id=%@&response_type=token&redirect_uri=%@", MEETUP_AUTHENTICATE_URL, MEETUP_CLIENT_ID, MEETUP_REDIRECT_URI];
-    
-    NSLog(@"url-> %@",autenticarURLString);
-    
-    
-    
-    NSURLRequest *webRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:autenticarURLString]];
-    
-    
-    
-     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    
-    [NSURLConnection sendAsynchronousRequest:webRequest queue:queue
-                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-                               if ([data length] > 0 && error == nil){
-                                   [self performSegueWithIdentifier:@"eventos" sender:data];
-                          
-                               }
-                               else if (error != nil) NSLog(@"Error: %@", error);
-    }];
+
     
 }
 
 
+-(void)viewDidAppear:(BOOL)animated{
 
+   
+    
+    
+    if (self.backend) {
+        
+        ER9AppDelegate *appDelegada = (ER9AppDelegate *)[[UIApplication sharedApplication] delegate];
+        
+        dispatch_queue_t meetup_api_cola = dispatch_queue_create("MEETUP_EVENT_REST", NULL);
+        
+        dispatch_async(meetup_api_cola, ^{
+           
+            [self.backend getUltimosEventos:10];
+            [self.backend getEventosPasados:10];
+            
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                appDelegada.backend = self.backend;
+                [self performSegueWithIdentifier:@"eventos" sender:Nil];
+            });
+            
+        });
+   
+      
+    }else{
+
+        
+        [self performSegueWithIdentifier:@"login" sender:Nil];
+        NSLog(@"Heinz");
+    }
+
+
+}
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 
   UIViewController *destination = segue.destinationViewController;
-    if ([destination respondsToSelector:@selector(setBackend:)]) {
-     [destination setValue:_backend forKey:@"backend"];
-        
-    }
+
     
-    if ([destination respondsToSelector:@selector(setDatos:)]) {
-        NSData *data = sender;
-        [destination setValue:data forKey:@"datos"];
+    if ([destination respondsToSelector:@selector(setDelegado:)]) {
+        [destination setValue:self forKey:@"delegado"];
         
     }
     

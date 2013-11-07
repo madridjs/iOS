@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DFD6AA9C-E458-4443-8032-BF28757B48CD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MadridJS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0DB6913C-C36F-4BDE-B49A-DB103568B55D</key>
+		<string>https://github.com/madridjs/iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MadridJS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0DB6913C-C36F-4BDE-B49A-DB103568B55D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/madridjs/iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0DB6913C-C36F-4BDE-B49A-DB103568B55D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0DB6913C-C36F-4BDE-B49A-DB103568B55D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Madridjs</string>
+		</dict>
+	</array>
+</dict>
+</plist>

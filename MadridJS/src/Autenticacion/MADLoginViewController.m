@@ -10,18 +10,40 @@
 
 @implementation MADLoginViewController
 
+#define MEETUP_AUTHENTICATE_URL @"https://secure.meetup.com/oauth2/authorize"
+
+#define MEETUP_CLIENT_ID @"u4ts648g220dch7tppat121i2r"
+
+#define MEETUP_CLIENT_SECRET @"4a01f783b381733772e444a6b1873b"
+
+#define MEETUP_REDIRECT_URI @"http://www.madridjs.org"
 
 #define MEETUP_PARAMETER_TOKEN @"access_token"
 
+
 -(void)viewDidAppear:(BOOL)animated{
 
+    
+    
+    
     [super viewDidAppear:animated];
 
+    
+    
+    NSString *autenticarURLString= [NSString stringWithFormat:@"%@?client_id=%@&response_type=token&redirect_uri=%@", MEETUP_AUTHENTICATE_URL, MEETUP_CLIENT_ID, MEETUP_REDIRECT_URI];
+    
+    NSLog(@"url-> %@",autenticarURLString);
+    
+    
+    
+    NSURLRequest *webRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:autenticarURLString]];
+
+    
+    
+    
     self.navegadorWeb.delegate = self;
     
-    [self.navegadorWeb loadData:self.datos
-                       MIMEType: @"text/html"
-               textEncodingName: @"UTF-8" baseURL:nil];
+    [self.navegadorWeb loadRequest:webRequest];
 
     
     
@@ -54,7 +76,7 @@ navigationType:(UIWebViewNavigationType)navigationType{
                 [defaults synchronize];
                 
                 MADBackend *backend = [[MADBackend alloc] initWithToken:accessToken];
-                [backend getUltimosEventos:10];
+                
                 
                 if ([self.delegado respondsToSelector:@selector(setBackend:)]) {
                       [self.delegado setValue:backend forKey:@"backend"];
@@ -64,8 +86,8 @@ navigationType:(UIWebViewNavigationType)navigationType{
                 }
                 
                 
-                [self performSegueWithIdentifier:@"eventos" sender:self];
-                
+                //[self performSegueWithIdentifier:@"eventos" sender:self];
+                [self dismissViewControllerAnimated:YES completion:nil];
                 
                 
             }

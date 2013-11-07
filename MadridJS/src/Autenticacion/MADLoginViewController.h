@@ -12,7 +12,7 @@
 @interface MADLoginViewController : UIViewController  <UIWebViewDelegate>
 
 
-@property (weak, nonatomic) NSData *datos;
+@property (strong, nonatomic) NSData *datos;
 @property (weak, nonatomic) IBOutlet UIWebView *navegadorWeb;
 @property (weak, nonatomic) id delegado;
 

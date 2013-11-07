@@ -10,7 +10,8 @@
 #import "MADBackend.h"
 #import "MADMeetupPasadoViewCell.h"
 #import "MADMeetupProximoViewCell.h"
-
+#import "ER9AppDelegate.h"
+#import "MADUtil.h"
 
 @interface MADEventosViewController : UITableViewController <UIWebViewDelegate,UIWebViewDelegate,UITableViewDelegate>
 

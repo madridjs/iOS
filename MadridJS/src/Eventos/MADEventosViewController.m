@@ -13,10 +13,9 @@
 
 
 -(void)viewDidLoad{
-    
+    ER9AppDelegate *appDelegada = (ER9AppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.backend = appDelegada.backend;
 
-
-    
 }
 
 
@@ -25,17 +24,37 @@
 
     MADMeetup *meet = self.backend.listado_eventos[indexPath.row];
     
-    MADMeetupPasadoViewCell *celda = [tableView dequeueReusableCellWithIdentifier:@"evento_past"];
-
     
-    if (!celda) {
-        celda = [[MADMeetupPasadoViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"evento_past"];
-      
+    if ([meet.estado isEqualToString:@"upcoming"]) {
+        MADMeetupProximoViewCell *celda = [tableView dequeueReusableCellWithIdentifier:meet.estado];
+       /* celda.evento_prox.text = meet.nombre;
+        celda.personas.text = [NSString stringWithFormat:@"%i", meet.personas];
+        celda.fecha.text = [ MADUtil construirFecha:meet.tiempo];
+        celda.direccion.text = @"Calle silicio";//meet.how_to_find;
+        */
+        
+        celda.proximo_evento.text =  meet.nombre;
+        celda.punto_encuentro.text = meet.direccion.direccion;
+    
+        return celda;
     }
-    celda.evento.text = meet.nombre;
-    celda.personas.text = [NSString stringWithFormat:@"%i", meet.personas];
     
-    return celda;   
+    if ([meet.estado isEqualToString:@"past"]) {
+        
+        MADMeetupPasadoViewCell *celda = [tableView dequeueReusableCellWithIdentifier:meet.estado];
+       /* celda.evento.text = meet.nombre;
+        celda.personas.text = [NSString stringWithFormat:@"%i", meet.personas];
+        celda.fecha.text = [MADUtil construirFecha:meet.tiempo];
+        */
+        celda.evento_pasado.text = meet.nombre;
+        celda.punto_encuentro.text = meet.direccion.direccion;
+        
+        return celda;
+        
+    }
+    //NSLog(@"-> %@",[meet.tiempo description]);
+    
+    return NULL;
 }
 
 
@@ -47,6 +66,21 @@
     return count;//[self.backend.listado_eventos count];
 }
 
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+
+    UIViewController *destination = segue.destinationViewController;
+    if ([destination respondsToSelector:@selector(setMeet:)]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        MADMeetup *meet = [self.backend.listado_eventos objectAtIndex:indexPath.row];
+        [destination setValue:meet forKey:@"meet"];
+    }
+    
+    
+
+
+}
 
 
 

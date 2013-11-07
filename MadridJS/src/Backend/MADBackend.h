@@ -25,11 +25,12 @@
 
 @property NSString *token;
 @property NSMutableArray *listado_eventos;
-//@property (nonatomic, weak) id <BackendDelegate> delegate;
 
+//@property (nonatomic, weak) id <BackendDelegate> delegate;
+-(void)getUltimosEventos:(int)numero_of_eventos;
+-(void)getEventosPasados:(int)numero_of_eventos;
 - (id)initWithToken:(NSString *)tokenId;
--(void)getUltimosEventos:(int)numero_of_Eventos;
--(void)parsearData:(NSData *)data;
+- (void)parsearData:(NSData *)data;
 
 
 @end

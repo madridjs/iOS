@@ -10,9 +10,10 @@
 
 @interface MADMeetupPasadoViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *evento;
-@property (weak, nonatomic) IBOutlet UILabel *fecha;
-@property (weak, nonatomic) IBOutlet UILabel *personas;
+@property (weak, nonatomic) IBOutlet UILabel *evento_pasado;
+@property (weak, nonatomic) IBOutlet UILabel *punto_encuentro;
+
+
 
 
 @end

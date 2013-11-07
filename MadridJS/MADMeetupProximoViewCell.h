@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MADMeetupProximoViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *evento_prox;
-@property (weak, nonatomic) IBOutlet UILabel *fecha;
-@property (weak, nonatomic) IBOutlet UILabel *direccion;
-@property (weak, nonatomic) IBOutlet UILabel *descripcion;
+
+@property (weak, nonatomic) IBOutlet UILabel *proximo_evento;
+@property (weak, nonatomic) IBOutlet UILabel *punto_encuentro;
+
 
 @end

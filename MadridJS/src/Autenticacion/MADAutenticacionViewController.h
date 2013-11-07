@@ -10,7 +10,7 @@
 #import "MADBackend.h"
 #import "MADEventosViewController.h"
 #import "MADLoginViewController.h"
-
+#import "ER9AppDelegate.h"
 
 
 @interface MADAutenticacionViewController : UIViewController
