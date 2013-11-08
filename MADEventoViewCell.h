@@ -14,4 +14,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *estado;
 @property (weak, nonatomic) IBOutlet UILabel *fecha;
 
+
+@property (weak, nonatomic) IBOutlet UIButton *informacion;
+@property (weak, nonatomic) IBOutlet UIButton *videos_link;
+@property (weak, nonatomic) IBOutlet UIButton *documentos;
+
+
 @end

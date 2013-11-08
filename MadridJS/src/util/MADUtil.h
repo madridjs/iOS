@@ -11,4 +11,5 @@
 @interface MADUtil : NSObject
 
 +(NSString *)construirFecha:(NSDate *)fecha;
++(NSMutableDictionary *)leerUrlParametros:(NSString *)url;
 @end

@@ -23,15 +23,10 @@
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MadridJS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5F-YS-6h5">
                                 <rect key="frame" x="20" y="150" width="280" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="38"/>
                                 <color key="textColor" red="0.96716161521084343" green="0.96427899096385539" blue="0.97043251129518071" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dca-2U-Yej">
-                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.76078431372549016" green="0.23137254901960785" blue="0.023529411764705882" alpha="0.80000000000000004" colorSpace="deviceRGB"/>
                     </view>
@@ -40,11 +35,12 @@
                         <outlet property="indicadorProgreso" destination="WdL-dY-Em4" id="VlF-1w-oUp"/>
                         <segue destination="QI1-Q6-SP4" kind="modal" identifier="login" modalTransitionStyle="crossDissolve" id="RHb-m3-Yra"/>
                         <segue destination="MXZ-bY-EBf" kind="modal" identifier="eventos" modalTransitionStyle="coverVertical" id="7sk-Ma-jIT"/>
+                        <segue destination="web-cq-yzY" kind="modal" modalTransitionStyle="coverVertical" id="X2t-45-nuh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1PR-UX-Dc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4373" y="-3456"/>
+            <point key="canvasLocation" x="-4421" y="-3718"/>
         </scene>
         <!--Proximo Table View Controller - Proximo Evento-->
         <scene sceneID="fUO-ii-zwE">
@@ -448,10 +444,13 @@
                                 </view>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
+                                    <outlet property="documentos" destination="V1d-Fp-CVd" id="nIV-4h-AqO"/>
                                     <outlet property="estado" destination="vzm-dv-P6P" id="0cb-zW-iuK"/>
                                     <outlet property="eventoNombre" destination="Fr8-TM-y8b" id="xVR-zr-QJk"/>
                                     <outlet property="fecha" destination="QII-8Z-oaC" id="wGP-fy-NYh"/>
+                                    <outlet property="informacion" destination="Gni-tv-qGS" id="WJ4-WG-YNK"/>
                                     <outlet property="javascripter" destination="ax2-9x-Ltn" id="K8l-XF-WQH"/>
+                                    <outlet property="videos_link" destination="7mi-rf-dQg" id="Omq-VG-8hH"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="upcoming" id="1a8-xC-UFH" customClass="MADEventoProxViewCell">
@@ -566,7 +565,51 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SuN-CA-1tf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3319" y="-2823"/>
+            <point key="canvasLocation" x="-3323" y="-2887"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="24P-sf-5bi">
+            <objects>
+                <viewController id="web-cq-yzY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rhn-KG-Wit"/>
+                        <viewControllerLayoutGuide type="bottom" id="eHk-JY-0bZ"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.49999999999999961" contentMode="scaleToFill" id="xA9-bU-X1D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hif-tO-slW">
+                                <rect key="frame" x="119" y="239" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" image="refresh_btn_v2.png">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="no disponible." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yay-er-JH7">
+                                <rect key="frame" x="73" y="155" width="182" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awl-Jp-vVj">
+                                <rect key="frame" x="73" y="123" width="174" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082352943720000002" green="0.058823533359999999" blue="0.24313727020000001" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="tintColor" red="0.76078431369999999" green="0.23137254900000001" blue="0.023529411760000001" alpha="0.80000000000000004" colorSpace="deviceRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBC-Xy-EBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3858" y="-4406"/>
         </scene>
         <!--Login View Controller - Ultimas Noticias-->
         <scene sceneID="wFA-lD-Ps4">
@@ -581,7 +624,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tXu-jG-Sce">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="36" width="320" height="532"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -595,7 +638,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LBf-SX-gmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3863" y="-4033"/>
+            <point key="canvasLocation" x="-3858" y="-3652"/>
         </scene>
         <!--Pasado Table View Controller - Eventos Pasado-->
         <scene sceneID="dnU-ke-TRU">
@@ -768,7 +811,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pkI-qa-UrL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2763" y="-2499"/>
+            <point key="canvasLocation" x="-2763" y="-2611"/>
         </scene>
         <!--Pasado View Controller - Informacion-->
         <scene sceneID="0Q2-ea-aUr">
@@ -800,7 +843,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I4g-rV-7y3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2763" y="-3197"/>
+            <point key="canvasLocation" x="-2763" y="-3435"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PjD-bM-eWC">
@@ -834,6 +877,7 @@
         <image name="location_48x48.png" width="48" height="48"/>
         <image name="mapa_btn_v1.png" width="48" height="48"/>
         <image name="play_btn_ortransp_v3.png" width="48" height="48"/>
+        <image name="refresh_btn_v2.png" width="256" height="256"/>
         <image name="share_48x48.png" width="48" height="48"/>
         <image name="user.png" width="48" height="48"/>
         <image name="video_48x48.png" width="48" height="48"/>

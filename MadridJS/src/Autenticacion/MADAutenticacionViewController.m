@@ -15,42 +15,18 @@
 @implementation MADAutenticacionViewController
 
 
-
+ER9AppDelegate *appDelegada;
 -(void)viewDidLoad{
 
+    appDelegada = (ER9AppDelegate *)[[UIApplication sharedApplication] delegate];
+    _backend = [MADBackend iniciarDesdeFichero];
+    
 
-    /*
-     https://secure.meetup.com/oauth2/authorize
-     ?client_id=YOUR_CONSUMER_KEY
-     &response_type=code
-     &redirect_uri=YOUR_CONSUMER_REDIRECT_URI
-     */
     
-    
-    
-   // NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-  /*
-    NSString *token = @""; //[defaults objectForKey:MEETUP_PARAMETER_TOKEN];
-    
-    
-    if ([token isEqual:@""]) {
-        [_indicadorProgreso startAnimating];
-        [self realizarAutenticacionOAuth];
-    }else{
-        
+    if (!self.backend) {
+        NSLog(@"No hay token hay que pedir uno a [Meetup]");
     }
     
-    */
-
-
-}
-
-
--(void)realizarAutenticacionOAuth{
-
-
-    
-
     
 }
 
@@ -62,18 +38,20 @@
     
     if (self.backend) {
         
-        ER9AppDelegate *appDelegada = (ER9AppDelegate *)[[UIApplication sharedApplication] delegate];
         
         dispatch_queue_t meetup_api_cola = dispatch_queue_create("MEETUP_EVENT_REST", NULL);
         
         dispatch_async(meetup_api_cola, ^{
-           
+           [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
             [self.backend getUltimosEventos:10];
             [self.backend getEventosPasados:10];
             
             
             dispatch_async(dispatch_get_main_queue(), ^{
+                
                 appDelegada.backend = self.backend;
+             
+                [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
                 [self performSegueWithIdentifier:@"eventos" sender:Nil];
             });
             

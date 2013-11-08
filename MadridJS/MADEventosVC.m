@@ -15,7 +15,7 @@
 -(void)viewDidLoad{
     ER9AppDelegate *appDelegada = (ER9AppDelegate *)[[UIApplication sharedApplication] delegate];
     self.backend = appDelegada.backend;
-    self.collectionView.backgroundColor = [UIColor colorWithWhite:0.25f alpha:1.0f];
+    self.collectionView.backgroundColor = [UIColor colorWithRed:0.4 green:0.0 blue:0.0 alpha:0.5f];
     
 }
 
@@ -34,6 +34,11 @@
     
         eventoCell.layer.borderColor = [UIColor blueColor].CGColor;
     
+        
+        eventoCell.informacion.tag = indexPath.row;
+        eventoCell.videos_link.tag = indexPath.row;
+        eventoCell.documentos.tag = indexPath.row;
+
         
         return eventoCell;
     }

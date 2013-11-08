@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MADBackend.h"
+#import "Constantes.h"
+#import "MADUtil.h"
 
 @interface MADLoginViewController : UIViewController  <UIWebViewDelegate>
 

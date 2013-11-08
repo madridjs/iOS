@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MADMeetup.h"
+#import "Constantes.h"
 
 @class MADBackend;
 
@@ -20,17 +21,28 @@
 @end
 */
 
-@interface MADBackend : NSObject
+@interface MADBackend : NSObject <NSCoding>
 
 
 @property NSString *token;
+@property NSString *refresh_token;
+@property (nonatomic) int token_expira_segundos;
 @property NSMutableArray *listado_eventos;
+@property NSDate *fechaExpiracion;
+
 
 //@property (nonatomic, weak) id <BackendDelegate> delegate;
+
+
 -(void)getUltimosEventos:(int)numero_of_eventos;
 -(void)getEventosPasados:(int)numero_of_eventos;
-- (id)initWithToken:(NSString *)tokenId;
-- (void)parsearData:(NSData *)data;
+-(id)initWithToken:(NSString *)tokenId;
+-(void)parsearData:(NSData *)data;
+-(void)revisarTokenAndRefrescar;
+- (id)initWithCodigo:(NSString *)codigo;
 
+
+//-(void)guardarToken;
++(MADBackend *)iniciarDesdeFichero;
 
 @end
