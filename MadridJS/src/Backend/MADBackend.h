@@ -9,40 +9,36 @@
 #import <Foundation/Foundation.h>
 #import "MADMeetup.h"
 #import "Constantes.h"
+#import "MADEventoCalendario.h"
 
 @class MADBackend;
 
-/*
-@protocol BackendDelegate <NSObject>
-
-@optional
--(void)recuperarListaEventos:(NSArray *)listaEventos;
-
-@end
-*/
 
 @interface MADBackend : NSObject <NSCoding>
 
-
+//miembros.
+@property NSMutableArray *listado_eventos;
 @property NSString *token;
 @property NSString *refresh_token;
-@property (nonatomic) int token_expira_segundos;
-@property NSMutableArray *listado_eventos;
 @property NSDate *fechaExpiracion;
+@property BOOL proximoActivado;
+@property int eventosPasados;
+@property (nonatomic) int token_expira_segundos;
 
 
-//@property (nonatomic, weak) id <BackendDelegate> delegate;
+//compuestos
+@property MADEventoCalendario *calendario;
 
 
--(void)getUltimosEventos:(int)numero_of_eventos;
--(void)getEventosPasados:(int)numero_of_eventos;
--(id)initWithToken:(NSString *)tokenId;
--(void)parsearData:(NSData *)data;
--(void)revisarTokenAndRefrescar;
-- (id)initWithCodigo:(NSString *)codigo;
 
 
-//-(void)guardarToken;
-+(MADBackend *)iniciarDesdeFichero;
+
+-(void) getUltimosEventos:(int)numero_of_eventos;
+-(void) getEventosPasados:(int)numero_of_eventos;
+-(id)   initWithToken:(NSString *)tokenId;
+-(void) parsearData:(NSData *)data pushHeap:(BOOL)pusheap;
+-(void) revisarTokenAndRefrescar;
+-(id)   initWithCodigo:(NSString *)codigo;
++(MADBackend *) iniciarDesdeFichero;
 
 @end

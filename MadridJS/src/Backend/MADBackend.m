@@ -223,8 +223,9 @@
     
     //production:  madridjs
     //devel:    ny-tech
+    //MEETUP_GRUPO_NOMBRE
     [param setObject:@"true" forKey:@"sign"];
-    [param setObject:@"madridjs" forKey:@"group_urlname"];
+    [param setObject:MEETUP_GRUPO_NOMBRE forKey:@"group_urlname"];
     [param setObject:[NSString stringWithFormat:@"%d",cantidad] forKey:@"page"];
     [param setObject:tiempo_evento forKey:@"status"];
     [param setObject:@"desc" forKey:@"desc"];
@@ -264,13 +265,22 @@
     
     [self revisarTokenAndRefrescar];
     
-    NSURLRequest *request = [self recuperarEventoUsandoTiempo:@"past" cantidad:numero_of_eventos];
+    
+    self.eventosPasados += numero_of_eventos;
+    NSURLRequest *request = [self recuperarEventoUsandoTiempo:@"past" cantidad:self.eventosPasados];
+    
+    
+
     
     NSData *data = [NSURLConnection sendSynchronousRequest:request
                                          returningResponse:&response
                                                      error:&error];
     
-    [self parsearData:data];
+    
+    
+    
+    
+    [self parsearData:data pushHeap:NO];
 
 }
 
@@ -301,7 +311,11 @@
                                                   returningResponse:&response
                                                               error:&error];
 
-    [self parsearData:data];
+    
+    [self parsearData:data pushHeap:YES];
+    
+    
+    
 }
 
 
@@ -314,7 +328,7 @@
  
  */
 
--(void)parsearData:(NSData *)data{
+-(void)parsearData:(NSData *)data pushHeap:(BOOL)pusheap{
 
 
     NSError *error = nil;
@@ -324,30 +338,36 @@
                                                              error:&error];
     
     
+    
+    NSMutableArray *listadoEventosTemp = [[NSMutableArray alloc]init];
+    
     NSArray *eventos =  [parsed_data objectForKey:@"results"];
+    
+    
+    
     
     for (NSDictionary *diccs in eventos) {
         
         MADMeetup *meetup = [[MADMeetup alloc]initWithDiccionario:diccs];
-        [self.listado_eventos addObject:meetup];
-        
+
+         if (![self.listado_eventos containsObject:meetup]) {
+            [listadoEventosTemp addObject:meetup];
+
+         }
     }
-
-}
-
-/*
-    -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
- 
     
- 
- 
- */
 
-
--(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
-
-    [self parsearData:data];
+    if (pusheap) {
+        [listadoEventosTemp addObjectsFromArray:self.listado_eventos];
+        self.listado_eventos = listadoEventosTemp;
+    }else if (listadoEventosTemp.count >0){
+        [self.listado_eventos addObjectsFromArray:listadoEventosTemp];
+    }
+    
+    
+    
 
 }
+
 
 @end

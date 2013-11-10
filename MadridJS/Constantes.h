@@ -13,14 +13,19 @@
 
 #define MEETUP_AUTHENTICATE_URL     @"https://secure.meetup.com/oauth2/authorize"
 
-#define MEETUP_CLIENT_ID            @""
+#define MEETUP_CLIENT_ID            @"u4ts648g220dch7tppat121i2r"
 
-#define MEETUP_CLIENT_SECRET        @"" //@"4a01f783b381733772e444a6b1873b"
+#define MEETUP_CLIENT_SECRET        @"mj4c8horu6ld2p9q34n8i496pk" //@"4a01f783b381733772e444a6b1873b"
 
 #define MEETUP_REDIRECT_URI         @"http://www.madridjs.org"
 
 #define MEETUP_PARAMETER_TOKEN      @"access_token"
 
+//production:  madridjs
+//devel:    ny-tech
+//MEETUP_GRUPO_NOMBRE
+
+#define MEETUP_GRUPO_NOMBRE         @"ny-tech"
 
 #define kToken                      @"token"
 #define kRefreshToken               @"refresh_token"

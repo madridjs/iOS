@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "MADBackend.h"
-#import "MADEventosViewController.h"
 #import "MADLoginViewController.h"
 #import "ER9AppDelegate.h"
 
@@ -22,6 +21,6 @@
 
 //@property UIWebView *navegadorOAuth;
 @property MADBackend *backend;
-
+@property MADEventoCalendario *calendario;
 
 @end

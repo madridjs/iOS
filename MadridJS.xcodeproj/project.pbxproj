@@ -15,12 +15,9 @@
 		B52CA76618185C9D0021E14E /* doc_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B52CA76418185C9D0021E14E /* doc_48x48.png */; };
 		B52CA76818185DF40021E14E /* directions_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B52CA76718185DF40021E14E /* directions_48x48.png */; };
 		B52CA76918185DF40021E14E /* directions_48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = B52CA76718185DF40021E14E /* directions_48x48.png */; };
-		B5310DBA18282D810066B539 /* MADPasadoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5310DB918282D810066B539 /* MADPasadoTableViewController.m */; };
 		B5310DBD18282FE90066B539 /* MADPasadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5310DBC18282FE90066B539 /* MADPasadoViewController.m */; };
 		B534049118259A54007DD8DE /* MADMeetup.m in Sources */ = {isa = PBXBuildFile; fileRef = B534049018259A54007DD8DE /* MADMeetup.m */; };
 		B534049418259B91007DD8DE /* MADMeetupDireccion.m in Sources */ = {isa = PBXBuildFile; fileRef = B534049318259B91007DD8DE /* MADMeetupDireccion.m */; };
-		B53404A01826C8A0007DD8DE /* MADMeetupPasadoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B534049F1826C8A0007DD8DE /* MADMeetupPasadoViewCell.m */; };
-		B53404A31826D76D007DD8DE /* MADMeetupProximoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B53404A21826D76D007DD8DE /* MADMeetupProximoViewCell.m */; };
 		B545509C1821C02200A07FA0 /* madridjs.png in Resources */ = {isa = PBXBuildFile; fileRef = B545509B1821C02200A07FA0 /* madridjs.png */; };
 		B548594518182EA000709B23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B548594418182EA000709B23 /* Foundation.framework */; };
 		B548594718182EA000709B23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B548594618182EA000709B23 /* CoreGraphics.framework */; };
@@ -53,7 +50,6 @@
 		B57A3A8718293EE000E477A5 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = B57A3A8618293EE000E477A5 /* info.png */; };
 		B57A3A8918293F9400E477A5 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = B57A3A8818293F9400E477A5 /* user.png */; };
 		B57A3A8D182942C800E477A5 /* MADUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B57A3A8C182942C800E477A5 /* MADUtil.m */; };
-		B58B154C182AB67600FC1469 /* MADProximoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B154B182AB67600FC1469 /* MADProximoTableViewController.m */; };
 		B58B1551182ABB3600FC1469 /* MADMapa.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B1550182ABB3600FC1469 /* MADMapa.m */; };
 		B58B1554182AC42700FC1469 /* MADAnotacion.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B1553182AC42700FC1469 /* MADAnotacion.m */; };
 		B58B1557182ADE1D00FC1469 /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = B58B1556182ADE1D00FC1469 /* config.png */; };
@@ -75,8 +71,9 @@
 		B5912886182BF2D7002F74A5 /* refresh_btn_v1.png in Resources */ = {isa = PBXBuildFile; fileRef = B5912885182BF2D7002F74A5 /* refresh_btn_v1.png */; };
 		B5912888182BF4F1002F74A5 /* refresh_btn_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = B5912887182BF4F1002F74A5 /* refresh_btn_v2.png */; };
 		B591288C182BF9F4002F74A5 /* MADNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B591288B182BF9F4002F74A5 /* MADNetworkViewController.m */; };
+		B5E0F1FE182FEFD70015DACF /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E0F1FD182FEFD70015DACF /* EventKit.framework */; };
+		B5E0F201182FF3510015DACF /* MADEventoCalendario.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E0F200182FF3510015DACF /* MADEventoCalendario.m */; };
 		B5ED791E182038F5002D9A76 /* MADAutenticacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ED791D182038F5002D9A76 /* MADAutenticacionViewController.m */; };
-		B5ED792218204E06002D9A76 /* MADEventosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ED792118204E06002D9A76 /* MADEventosViewController.m */; };
 		B5ED792618205A2F002D9A76 /* MADBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ED792518205A2F002D9A76 /* MADBackend.m */; };
 		B5FC183C182734F900938D8D /* MADLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FC183B182734F900938D8D /* MADLoginViewController.m */; };
 /* End PBXBuildFile section */
@@ -96,18 +93,12 @@
 		B52CA76118185B8A0021E14E /* video_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_48x48.png; sourceTree = "<group>"; };
 		B52CA76418185C9D0021E14E /* doc_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doc_48x48.png; sourceTree = "<group>"; };
 		B52CA76718185DF40021E14E /* directions_48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions_48x48.png; sourceTree = "<group>"; };
-		B5310DB818282D810066B539 /* MADPasadoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADPasadoTableViewController.h; path = src/Eventos/MADPasadoTableViewController.h; sourceTree = "<group>"; };
-		B5310DB918282D810066B539 /* MADPasadoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPasadoTableViewController.m; path = src/Eventos/MADPasadoTableViewController.m; sourceTree = "<group>"; };
 		B5310DBB18282FE90066B539 /* MADPasadoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADPasadoViewController.h; path = src/Eventos/MADPasadoViewController.h; sourceTree = "<group>"; };
 		B5310DBC18282FE90066B539 /* MADPasadoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADPasadoViewController.m; path = src/Eventos/MADPasadoViewController.m; sourceTree = "<group>"; };
 		B534048F18259A54007DD8DE /* MADMeetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADMeetup.h; sourceTree = "<group>"; };
 		B534049018259A54007DD8DE /* MADMeetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADMeetup.m; sourceTree = "<group>"; };
 		B534049218259B91007DD8DE /* MADMeetupDireccion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADMeetupDireccion.h; path = src/Backend/MADMeetupDireccion.h; sourceTree = "<group>"; };
 		B534049318259B91007DD8DE /* MADMeetupDireccion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADMeetupDireccion.m; path = src/Backend/MADMeetupDireccion.m; sourceTree = "<group>"; };
-		B534049E1826C8A0007DD8DE /* MADMeetupPasadoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADMeetupPasadoViewCell.h; path = src/ui/MADMeetupPasadoViewCell.h; sourceTree = "<group>"; };
-		B534049F1826C8A0007DD8DE /* MADMeetupPasadoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADMeetupPasadoViewCell.m; path = src/ui/MADMeetupPasadoViewCell.m; sourceTree = "<group>"; };
-		B53404A11826D76D007DD8DE /* MADMeetupProximoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADMeetupProximoViewCell.h; sourceTree = "<group>"; };
-		B53404A21826D76D007DD8DE /* MADMeetupProximoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADMeetupProximoViewCell.m; sourceTree = "<group>"; };
 		B545509B1821C02200A07FA0 /* madridjs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madridjs.png; sourceTree = "<group>"; };
 		B548594118182EA000709B23 /* MadridJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B548594418182EA000709B23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -138,8 +129,6 @@
 		B57A3A8818293F9400E477A5 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		B57A3A8B182942C800E477A5 /* MADUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADUtil.h; path = src/util/MADUtil.h; sourceTree = "<group>"; };
 		B57A3A8C182942C800E477A5 /* MADUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADUtil.m; path = src/util/MADUtil.m; sourceTree = "<group>"; };
-		B58B154A182AB67600FC1469 /* MADProximoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADProximoTableViewController.h; sourceTree = "<group>"; };
-		B58B154B182AB67600FC1469 /* MADProximoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADProximoTableViewController.m; sourceTree = "<group>"; };
 		B58B154F182ABB3600FC1469 /* MADMapa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADMapa.h; path = src/ui/MADMapa.h; sourceTree = "<group>"; };
 		B58B1550182ABB3600FC1469 /* MADMapa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADMapa.m; path = src/ui/MADMapa.m; sourceTree = "<group>"; };
 		B58B1552182AC42700FC1469 /* MADAnotacion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADAnotacion.h; sourceTree = "<group>"; };
@@ -169,10 +158,11 @@
 		B591288A182BF9F4002F74A5 /* MADNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADNetworkViewController.h; sourceTree = "<group>"; };
 		B591288B182BF9F4002F74A5 /* MADNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADNetworkViewController.m; sourceTree = "<group>"; };
 		B5912894182C3023002F74A5 /* Constantes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constantes.h; sourceTree = "<group>"; };
+		B5E0F1FD182FEFD70015DACF /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		B5E0F1FF182FF3510015DACF /* MADEventoCalendario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADEventoCalendario.h; sourceTree = "<group>"; };
+		B5E0F200182FF3510015DACF /* MADEventoCalendario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADEventoCalendario.m; sourceTree = "<group>"; };
 		B5ED791C182038F5002D9A76 /* MADAutenticacionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADAutenticacionViewController.h; path = src/Autenticacion/MADAutenticacionViewController.h; sourceTree = "<group>"; };
 		B5ED791D182038F5002D9A76 /* MADAutenticacionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADAutenticacionViewController.m; path = src/Autenticacion/MADAutenticacionViewController.m; sourceTree = "<group>"; };
-		B5ED792018204E06002D9A76 /* MADEventosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADEventosViewController.h; path = src/Eventos/MADEventosViewController.h; sourceTree = "<group>"; };
-		B5ED792118204E06002D9A76 /* MADEventosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADEventosViewController.m; path = src/Eventos/MADEventosViewController.m; sourceTree = "<group>"; };
 		B5ED792418205A2F002D9A76 /* MADBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADBackend.h; path = src/Backend/MADBackend.h; sourceTree = "<group>"; };
 		B5ED792518205A2F002D9A76 /* MADBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADBackend.m; path = src/Backend/MADBackend.m; sourceTree = "<group>"; };
 		B5FC183A182734F900938D8D /* MADLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADLoginViewController.h; path = src/Autenticacion/MADLoginViewController.h; sourceTree = "<group>"; };
@@ -184,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E0F1FE182FEFD70015DACF /* EventKit.framework in Frameworks */,
 				B5912884182BEDDF002F74A5 /* SystemConfiguration.framework in Frameworks */,
 				B54859911818459300709B23 /* MapKit.framework in Frameworks */,
 				B548594718182EA000709B23 /* CoreGraphics.framework in Frameworks */,
@@ -205,15 +196,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B5310DB418282CF60066B539 /* eventos pasados */ = {
-			isa = PBXGroup;
-			children = (
-				B5310DB818282D810066B539 /* MADPasadoTableViewController.h */,
-				B5310DB918282D810066B539 /* MADPasadoTableViewController.m */,
-			);
-			name = "eventos pasados";
-			sourceTree = "<group>";
-		};
 		B548593818182EA000709B23 = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +218,7 @@
 		B548594318182EA000709B23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5E0F1FD182FEFD70015DACF /* EventKit.framework */,
 				B5912883182BEDDF002F74A5 /* SystemConfiguration.framework */,
 				B54859901818459300709B23 /* MapKit.framework */,
 				B548594418182EA000709B23 /* Foundation.framework */,
@@ -323,26 +306,6 @@
 				B57A3A8C182942C800E477A5 /* MADUtil.m */,
 			);
 			name = Util;
-			sourceTree = "<group>";
-		};
-		B58B1548182AB5BB00FC1469 /* celdas */ = {
-			isa = PBXGroup;
-			children = (
-				B534049E1826C8A0007DD8DE /* MADMeetupPasadoViewCell.h */,
-				B534049F1826C8A0007DD8DE /* MADMeetupPasadoViewCell.m */,
-				B53404A11826D76D007DD8DE /* MADMeetupProximoViewCell.h */,
-				B53404A21826D76D007DD8DE /* MADMeetupProximoViewCell.m */,
-			);
-			name = celdas;
-			sourceTree = "<group>";
-		};
-		B58B1549182AB5CD00FC1469 /* eventos proximos */ = {
-			isa = PBXGroup;
-			children = (
-				B58B154A182AB67600FC1469 /* MADProximoTableViewController.h */,
-				B58B154B182AB67600FC1469 /* MADProximoTableViewController.m */,
-			);
-			name = "eventos proximos";
 			sourceTree = "<group>";
 		};
 		B58B154D182AB68000FC1469 /* visor */ = {
@@ -450,11 +413,6 @@
 				B58B155A182AE47C00FC1469 /* newUi */,
 				B58B154E182ABB1600FC1469 /* mapa */,
 				B58B154D182AB68000FC1469 /* visor */,
-				B58B1548182AB5BB00FC1469 /* celdas */,
-				B5310DB418282CF60066B539 /* eventos pasados */,
-				B58B1549182AB5CD00FC1469 /* eventos proximos */,
-				B5ED792018204E06002D9A76 /* MADEventosViewController.h */,
-				B5ED792118204E06002D9A76 /* MADEventosViewController.m */,
 			);
 			name = Eventos;
 			sourceTree = "<group>";
@@ -468,6 +426,8 @@
 				B534049018259A54007DD8DE /* MADMeetup.m */,
 				B534049218259B91007DD8DE /* MADMeetupDireccion.h */,
 				B534049318259B91007DD8DE /* MADMeetupDireccion.m */,
+				B5E0F1FF182FF3510015DACF /* MADEventoCalendario.h */,
+				B5E0F200182FF3510015DACF /* MADEventoCalendario.m */,
 			);
 			name = BackEnd;
 			sourceTree = "<group>";
@@ -608,24 +568,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53404A31826D76D007DD8DE /* MADMeetupProximoViewCell.m in Sources */,
 				B5FC183C182734F900938D8D /* MADLoginViewController.m in Sources */,
 				B5ED791E182038F5002D9A76 /* MADAutenticacionViewController.m in Sources */,
 				B58B1564182AE99800FC1469 /* MADEventoViewCell.m in Sources */,
 				B5310DBD18282FE90066B539 /* MADPasadoViewController.m in Sources */,
 				B58B155D182AE58F00FC1469 /* MADEventosVC.m in Sources */,
 				B58B1554182AC42700FC1469 /* MADAnotacion.m in Sources */,
-				B58B154C182AB67600FC1469 /* MADProximoTableViewController.m in Sources */,
 				B58B1551182ABB3600FC1469 /* MADMapa.m in Sources */,
 				B57A3A8D182942C800E477A5 /* MADUtil.m in Sources */,
 				B5912882182BEDAE002F74A5 /* Reachability.m in Sources */,
 				B534049418259B91007DD8DE /* MADMeetupDireccion.m in Sources */,
-				B5ED792218204E06002D9A76 /* MADEventosViewController.m in Sources */,
+				B5E0F201182FF3510015DACF /* MADEventoCalendario.m in Sources */,
 				B5ED792618205A2F002D9A76 /* MADBackend.m in Sources */,
 				B534049118259A54007DD8DE /* MADMeetup.m in Sources */,
 				B591288C182BF9F4002F74A5 /* MADNetworkViewController.m in Sources */,
-				B53404A01826C8A0007DD8DE /* MADMeetupPasadoViewCell.m in Sources */,
-				B5310DBA18282D810066B539 /* MADPasadoTableViewController.m in Sources */,
 				B58B157D182B133100FC1469 /* MADEventoProxViewCell.m in Sources */,
 				B548595118182EA000709B23 /* main.m in Sources */,
 				B548595518182EA000709B23 /* ER9AppDelegate.m in Sources */,
@@ -755,6 +711,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MadridJS/MadridJS-Prefix.pch";
 				INFOPLIST_FILE = "MadridJS/MadridJS-Info.plist";
@@ -768,6 +725,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MadridJS/MadridJS-Prefix.pch";
 				INFOPLIST_FILE = "MadridJS/MadridJS-Info.plist";

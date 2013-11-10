@@ -19,13 +19,22 @@ ER9AppDelegate *appDelegada;
 -(void)viewDidLoad{
 
     appDelegada = (ER9AppDelegate *)[[UIApplication sharedApplication] delegate];
-    _backend = [MADBackend iniciarDesdeFichero];
     
+    
+    _backend = [MADBackend iniciarDesdeFichero];
+    _calendario = [MADEventoCalendario iniciarDesdeFichero];
 
+    
     
     if (!self.backend) {
         NSLog(@"No hay token hay que pedir uno a [Meetup]");
     }
+    
+    if (!self.calendario) {
+        NSLog(@"No hay calendario va ver que hacer uno");
+    }
+    
+    
     
     
 }
@@ -43,12 +52,14 @@ ER9AppDelegate *appDelegada;
         
         dispatch_async(meetup_api_cola, ^{
            [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+         
             [self.backend getUltimosEventos:10];
             [self.backend getEventosPasados:10];
             
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                
+            
+                appDelegada.calendario =self.calendario;
                 appDelegada.backend = self.backend;
              
                 [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;

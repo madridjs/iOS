@@ -1,0 +1,13 @@
+Mejorar la pantalla de login  > crear una mejor entrada y salida de X
+login. X
+ordenar forma descendente. X
+poner la fecha. X
+ponerme con la pantalla de eventos pasados. X
+Mapa X.
+Mecanismo de reinicio de token OAuth.X
+persistencia de datos.X
+status wheel para red.X
+sobrecargar el metodo isEquals para las comparaciones.
+detectar network capabilities del dispositivo.
+Refrescar eventos on demand [arriba].
+Refrescar eventos on demand [abajo].

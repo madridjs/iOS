@@ -7,16 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EventKit/EventKit.h>
 #import "MADBackend.h"
 #import "ER9AppDelegate.h"
 #import "MADEventoViewCell.h"
 #import "MADEventoProxViewCell.h"
+#import "MADUtil.h"
+#import "MADEventoCalendario.h"
 
 
-@interface MADEventosVC : UICollectionViewController
+@interface MADEventosVC : UICollectionViewController <UIActionSheetDelegate>
 
 
 @property MADBackend *backend;
-
+@property (nonatomic) MADEventoCalendario *calendario;
 
 @end

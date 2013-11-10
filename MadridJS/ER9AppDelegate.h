@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "MADBackend.h"
-
+#import "MADEventoCalendario.h"
 @interface ER9AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) MADBackend *backend;
-
+@property (strong, nonatomic) MADEventoCalendario *calendario;
 
 
 

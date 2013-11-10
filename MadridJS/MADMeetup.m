@@ -10,6 +10,7 @@
 
 @implementation MADMeetup
 
+@synthesize identificador = _identificador;
 
 #define DESC_CHARLA_SPA @"<p><b>Descripción de la charla</b></p>"
 #define BIO_CHARLA_SPA @"<p><b>Biografía del ponente</b></p>"
@@ -40,9 +41,9 @@
         double actualizado_sec        = [[meetu_dicc objectForKey:@"updated"]doubleValue];
         double tiempo_sec             = [[meetu_dicc objectForKey:@"time"]doubleValue];
         
-        _actualizado = [NSDate dateWithTimeIntervalSinceReferenceDate:(actualizado_sec / 1000)];
-        _creado      = [NSDate dateWithTimeIntervalSinceReferenceDate:(creado_sec / 1000)];
-        _tiempo      = [NSDate dateWithTimeIntervalSinceReferenceDate:(tiempo_sec / 1000)];
+        _actualizado = [NSDate dateWithTimeIntervalSince1970:(actualizado_sec / 1000)];
+        _creado      = [NSDate dateWithTimeIntervalSince1970:(creado_sec / 1000)];
+        _tiempo      = [NSDate dateWithTimeIntervalSince1970:(tiempo_sec / 1000)];
         
         
           _direccion = [[MADMeetupDireccion alloc]initWithDiccionario:venue_dicc];
@@ -91,5 +92,19 @@
     
 }
 
+
+-(BOOL)isEqual:(id)object{
+    
+    if([[object valueForKey:@"identificador"] isEqualToString:self.identificador])
+        return YES;
+    
+    
+    
+    
+    
+    return NO;
+
+
+}
 
 @end
