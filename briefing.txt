@@ -7,7 +7,10 @@ Mapa X.
 Mecanismo de reinicio de token OAuth.X
 persistencia de datos.X
 status wheel para red.X
-sobrecargar el metodo isEquals para las comparaciones.
+sobrecargar el metodo isEquals para las comparaciones.X
+detectar network capabilities del dispositivo.X
+Refrescar eventos on demand [arriba].X
+Refrescar eventos on demand [abajo].X
+Integracion calendario. X
 detectar network capabilities del dispositivo.
-Refrescar eventos on demand [arriba].
-Refrescar eventos on demand [abajo].
+
